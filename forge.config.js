@@ -46,4 +46,17 @@ module.exports = {
       },
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'reversefuture',
+          name: 'my-app'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ],
 };

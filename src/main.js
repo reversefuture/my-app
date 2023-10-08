@@ -52,3 +52,7 @@ app.on('window-all-closed', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+// auto update via the autoUpdater module, which reads from an update server feed to check if a new version is available for download.
+// This module will search for the update.electronjs.org feed that matches your project's package.json "repository" field and autoupdate the 
+require('update-electron-app')()
